@@ -265,7 +265,7 @@ class sideBar extends HTMLElement{
         
         <div class="formNewNotes">
             <div id="inputNewNotes" class="input_newNotes">
-                <div class="xmark"><img src="${IconXmark}" alt=""></div>
+                <div class="xmark"><img src="${IconXmark}" alt="Close sidebar"></div>
                 <h4 id="input_notes">Masukan Catatan Baru</h4>
                     <form id="inputNote">
                         <div class="input">
@@ -299,7 +299,7 @@ class sideBar extends HTMLElement{
         </div>
 
         <div class="side-bar-second">
-                <img src="${IconPeople}" alt="">
+                <img src="${IconPeople}" alt="People icon">
         </div>
         ` 
           

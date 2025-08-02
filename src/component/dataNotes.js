@@ -8,7 +8,7 @@ class dataNotes extends HTMLElement{
         
         this._shaddowRoot.innerHTML =`
         <div class="info" hidden >nothing notes</div>
-        <img class="loader" src="${iconSpinner}">
+        <img class="loader" src="${iconSpinner}" alt="Loading...">
         `
         this._loader = this._shaddowRoot.querySelector('img.loader')   
         this._info = this._shaddowRoot.querySelector('.info')
@@ -169,7 +169,7 @@ class dataNotes extends HTMLElement{
                     <div class="time"> ${notes.createdAt.substring(0, 10)} |  ${notes.createdAt.substring(11, 16)} WIB</div>
                     <div class="feature">
                         <div class="featureIcon delete">
-                            <img class="btnDelete" src="${iconTrash}" alt="">
+                            <img class="btnDelete" src="${iconTrash}" alt="Delete note">
                         </div>
                     </div>
                 </div>
