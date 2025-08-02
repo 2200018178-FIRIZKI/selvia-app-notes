@@ -7,6 +7,7 @@ Aplikasi ini merupakan aplikasi catatan sederhana berbasis web yang dibangun men
 
 ## Error Notes
 
+
 Pada project yang diperiksa terjadi beberapa error saat proses build dan menjalankan aplikasi di browser, di antaranya:
 - **Error 404 pada resource CSS/JS:** Browser menolak memuat file CSS dan JS dari `/src` karena file tidak ditemukan atau MIME type tidak sesuai.
 - **Error font:** Font gagal di-load karena file font rusak atau konfigurasi loader belum tepat.
