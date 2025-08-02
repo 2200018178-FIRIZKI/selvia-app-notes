@@ -1,51 +1,49 @@
 @font-face {
- font-family: 'fredokaOne';
- src: url(../assets/font/FredokaOne-Regular.ttf);
+  font-family: 'FredokaOne';
+  src: url(../assets/font/FredokaOne-Regular.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'poppins';
-    src: url(../assets/font/Poppins-Regular.ttf);
-   }
-
-*, ::after, ::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  font-family: 'Poppins';
+  src: url(../assets/font/Poppins-Regular.ttf) format('truetype');
 }
 
-body{
-    overflow: auto;
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main{
-    display: grid;
-    grid-template-columns: 25% 75%;
-    background-color: rgb(235, 199, 230);
-    height: 100vh;
+body {
+  overflow: auto;
 }
 
-main .container{
-    padding: 1rem;
-    overflow: auto;
+main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  background-color: rgb(235, 199, 230);
+  height: 100vh;
 }
 
-main .container .data-notes{
-    font-family: 'Poppins';
-    margin-top: 1rem;
-    padding: 1.5rem;
-    background-color: rgb(247, 250, 253);
-    border-radius: 0.8rem;
-   
+main .container {
+  padding: 1rem;
+  overflow: auto;
+}
+
+main .container .data-notes {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background-color: rgb(247, 250, 253);
+  border-radius: 0.8rem;
 }
 
 @media screen and (max-width: 768px) {
-    main{  
-        grid-template-columns: 100%;
-    }
-
-    main .container{
-        margin-top: 4rem;
-    }
+  main {
+    grid-template-columns: 100%;
   }
+
+  main .container {
+    margin-top: 4rem;
+  }
+}

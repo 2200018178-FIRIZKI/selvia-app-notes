@@ -13,42 +13,21 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-          },
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
         ],
-        
-      },
-      
-      
-      {
-        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[hash].[ext]",
-            outputPath: "fonts",
-            esModule: false
-          }
-        }
       },
       {
         test: /\.(png|jp?g|svg)$/,
         use: [{
           loader: "url-loader",
-          options: {
-            limit: 5000
-          }
+          options: { limit: 5000 }
         }]
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        test: /\.(woff(2)?|ttf|eot|otf)$/i,
         type: 'asset/resource',
       },
-     
     ],
   },
   plugins: [
